@@ -1,0 +1,261 @@
+body {
+    background-color: antiquewhite;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* navbar */
+nav {
+    /* padding: 0px 10px 20px 10px; */
+    height: 100px;
+    width: 100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#name {
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.nameText {
+    text-anchor: middle; 
+    font-weight: bold;
+    font-family: Clicker Script, cursive;
+    font-size: 9em;
+    stroke-width: 1.75;
+    stroke: black;
+    fill: transparent;
+}
+
+.socialImg {
+    height: 50px;
+    position: absolute;
+    top: 25%;
+}
+
+.socialImg:hover {
+    -webkit-animation: animateOpacity 0.3s forwards;
+    -moz-animation: animateOpacity 0.3s forwards;
+    animation: animateOpacity 0.3s forwards;
+    text-decoration: none;
+}
+
+#social {
+    float: right;
+    display: inline-block;
+    /* padding-right: 20px; */
+    height: 100px;
+    width: 210px;
+    position: relative;
+}
+
+.spacing {
+    width: 25px;
+    display: inline-block;
+}
+
+
+/* span of images */
+#backgroundImg {
+    background-image: url('../img/index/background-index.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 500px;
+    border-style: dashed;
+    border-color: black;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: -20px;
+    z-index: 1;
+}
+
+#alphaImg {
+    background-color: rgba(255, 255, 255, 0.25);
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+#iconContainer {
+    width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+/*    -webkit-animation: fadeIn 0.5s ease-in-out 3s forwards;
+    -moz-animation: fadeIn 0.5s ease-in-out 3s forwards;
+    animation: fadeIn 0.5s ease-in-out 3s forwards;*/
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+
+.linksDiv {
+    height: 100px;
+    display: inline-block;
+}
+
+.spacing {
+    display: inline-block;
+    width: 70px;
+    height: 100px;
+}
+
+.icons {
+    height: 100px;
+    width: auto;
+}
+
+.icons:hover {
+    -webkit-animation: rotate 3s linear infinite;
+    -moz-animation: rotate 3s linear infinite;
+    animation: rotate 3s linear infinite;
+}
+
+.descriptors {
+    opacity: 0;
+    text-align: center;
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 1em;
+}
+
+#aboutme:hover div {
+    opacity: 1;
+}
+#projects:hover div {
+    opacity: 1;
+}
+#resume:hover div {
+    opacity: 1;
+}
+
+a { 
+    color: white; 
+    text-decoration: none;
+    height: 100px;
+    /* top: 20%; */
+}
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* svg */
+.drawPath {
+    stroke: black;
+    stroke-width: 4.0;
+    stroke-opacity: 1;
+    stroke-linejoin: round;
+    fill-rule: nonzero;
+    fill-opacity: 1;
+    fill: transparent;
+}
+
+/* general */
+.container { 
+    position: relative; 
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* keyframes */
+@-webkit-keyframes animateOpacity {
+    100% { opacity: 0.6; }
+}
+@-moz-keyframes animateOpacity {
+    100% { opacity: 0.6; }
+}
+@keyframes animateOpacity {
+    100% { opacity: 0.6; }
+}
+
+@-webkit-keyframes rotate {
+    0% { -webkit-transform: rotate(0deg); }
+    25% { -webkit-transform: rotate(-5deg); }
+    50% { -webkit-transform: rotate(0deg); }
+    75% { -webkit-transform: rotate(5deg); }
+    100% { -webkit-transform: rotate(0deg); }
+}
+@-moz-keyframes rotate {
+    0% { -moz-transform: rotate(0deg); }
+    25% { -moz-transform: rotate(-5deg); }
+    50% { -moz-transform: rotate(0deg); }
+    75% { -moz-transform: rotate(5deg); }
+    100% { -moz-transform: rotate(0deg); }
+}
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-5deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@media (max-width: 650px) {
+    svg {
+        width: 80%
+    }
+
+    #backgroundImg {
+        width: 250px;
+        height: 250px
+    }
+
+    .icons {
+        width: 50px;
+        height: auto;
+    }
+
+    .spacing {
+        width: 20px;
+        height: auto;
+    }
+
+    .descriptors {
+        opacity: 1;
+    }
+
+    #iconContainer {
+        top: 28%;
+    }
+
+    #social {
+        margin-top: 10px;
+    }
+
+    .socialImg {
+        height: 40px;
+        position: relative;
+    }
+
+    #social .spacing {
+        width: 10px;
+    }
+}
+/*
+@-webkit-keyframes fadeIn {
+  100% { 
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  100% { 
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  100% { 
+    opacity: 1;
+  }
+}*/

@@ -1,0 +1,231 @@
+/* general */
+body {
+    background-color: antiquewhite;
+    padding: 0px;
+    margin: 0px;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: black;
+}
+
+/* header section */
+nav {
+    height: 100px;
+    width: 100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#name {
+    font-family: 'Rancho', cursive;
+    font-size: 4rem;
+    font-weight: 700;
+    color: black;
+    margin-left: 15px;
+    margin-top: 20px;
+    height: 100px;
+}
+
+#nameText {
+    position: relative;
+    top: 10px;
+}
+
+.socialImg {
+    height: 50px;
+}
+
+.socialImg:hover {
+    -webkit-animation: animateOpacity 0.3s forwards;
+    -moz-animation: animateOpacity 0.3s forwards;
+    animation: animateOpacity 0.3s forwards;
+    text-decoration: none;
+}
+
+#social {
+    float: right;
+    display: inline-block;
+    padding-right: 20px;
+    margin-top: 20px;
+}
+
+.spacing {
+    width: 25px;
+    display: inline-block;
+}
+
+
+
+/* container div */
+#infoContainer { 
+    display: table;
+    table-layout: fixed;
+    width: 960px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    background: url('../img/about-me/background.jpg') no-repeat left top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.blocks {
+    display: table-row;
+}
+
+.tile {
+    display: table-cell;
+    height: 100px;
+    border: 10px solid antiquewhite;
+    width: 33%;
+    -webkit-transition: background 0.5s ease-in-out;
+    -moz-transition: background 0.5s ease-in-out;
+    transition: background 0.5s ease-in-out;
+    /* border: 3px black; */
+}
+
+.tile:hover {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.tileType {
+    font-family: 'Garamond', serif;
+    font-size: 1.5rem;
+    color: black;
+    margin-left: 10px;
+}
+.tileContent {
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: black;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.tileImg {
+    width: 50px;
+    display: inline-block;
+}
+
+#photoDiv {
+    overflow: hidden;
+    height: 320px;
+    /* margin: 0 auto; */
+}
+
+#photo {
+    width: 280px;
+    margin: 0 auto;
+    margin-top: -20px;
+    display: table;
+}
+
+#about-box {
+    margin: 0px;
+}
+
+#about-text {
+    color: black;
+    font-family: 'Cookie', cursive;
+    text-align: center;
+    font-size: 6rem;
+    -webkit-animation: glowText 2s ease-in-out 0.25s forwards;
+    animation: glowText 2s ease-in-out 0.25s forwards;
+}
+
+p {
+    margin: 0;
+}
+
+
+@-webkit-keyframes animateOpacity {
+    100% { opacity: 0.6; }
+}
+@-moz-keyframes animateOpacity {
+    100% { opacity: 0.6; }
+}
+@keyframes animateOpacity {
+    100% { opacity: 0.6; }
+}
+
+
+
+@-webkit-keyframes glowText {
+    50% {
+        text-shadow: -5px 5px 10px #191919;
+    }
+    100% { 
+        text-shadow: 0px 0px black;
+    }
+}
+
+@keyframes glowText {
+    50% {
+        text-shadow: -5px 5px 10px #191919;
+    }
+    100% { 
+        text-shadow: 0px 0px black;
+    }
+}
+
+@media (max-width: 650px) {
+    .spacing {
+        width: 20px;
+        height: auto;
+    }
+
+    #social {
+        margin-top: 33px;
+    }
+
+    .socialImg {
+        height: 40px;
+    }
+
+    #social .spacing {
+        width: 10px;
+    }
+
+    #nameText {
+        font-size: 3rem;
+    }
+
+    .blocks, .tile { 
+        display: block;
+    }
+
+    .photoTile {
+        height: 100%;
+    }
+
+    .span2 .tileContent {
+        font-size: 1.5rem;
+    }
+
+    .tile {
+        width: 100%;
+        padding: 7px;
+    }
+
+    .tileContent {
+        padding-top: 10px;
+    }
+
+    #infoContainer {
+        width: 90%;
+    }
+}

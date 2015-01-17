@@ -1,0 +1,231 @@
+body {
+    background-color: black;
+    /*background: -webkit-linear-gradient(#D5BFFF, #CACAFF);
+    background: linear-gradient(#D5BFFF, #CACAFF);*/
+    background-image: url('../img/background-index-photo.png');
+    background-size: contain;
+  	color: white;
+}
+
+
+/* name */
+#hello {
+    margin: 6% 0 0 8%;
+    font-family: 'Josefine Slab', serif;
+    text-shadow: 2px 2px #A8A8A8;
+    font-size: 2em;
+}
+
+#firstName {
+  	margin: 0 0 0 25%;
+    font-family: 'Clicker Script', cursive;
+    text-shadow: 4px 4px #787878;
+    font-size: 6em;
+}
+
+#lastName {
+  	margin: -5% 0 0 45%;
+    font-family: 'Clicker Script', cursive;
+    text-shadow: 4px 4px #A8A8A8;
+    font-size: 6em;
+}
+
+/* span of images */
+#iconContainer {
+    opacity: 0;
+    width: 500px;
+    height: auto;
+    display: block;
+    margin: 17% auto 0 auto;
+    -webkit-animation: fadeIn 0.5s ease-in-out 3s forwards;
+    animation: fadeIn 0.5s ease-in-out 3s forwards;
+}
+
+.linksDiv {
+    height: 100px;
+    display: inline-block;
+}
+
+.spacing {
+    display: inline-block;
+    width: 70px;
+    height: 100px;
+}
+
+.icons {
+    height: 100px;
+    width: auto;
+}
+
+.descriptors {
+    opacity: 0;
+    text-align: center;
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 1em;
+}
+
+#aboutme:hover div {
+    opacity: 1;
+}
+#projects:hover div {
+    opacity: 1;
+}
+#resume:hover div {
+    opacity: 1;
+}
+
+
+/* table */
+.banner {
+    position: relative;
+    padding: 0 0 0 0;
+    opacity: 0;   /* would I use visibility? */
+    -webkit-animation: fadeIn 0.5s ease-in-out 3s forwards;
+    animation: fadeIn 0.5s ease-in-out 3s forwards;
+    width: 50%;
+    margin: 0 auto;
+}
+table {
+    margin: 10% auto 0 auto; 
+}
+.textLink {
+    text-align: center;
+    font-family: 'Shadows Into Light Two', cursive;    
+    font-size: 1.75em;
+    color: white;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+.bannerImg {
+    width: 100%;
+    height: 20px;
+    margin: 0 auto;
+    padding: 0 0 0 0;
+}
+a { 
+    color: white; 
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* general */
+.container { 
+    position: relative; 
+    width: 100%;
+    height: 100vh;
+}
+.left {
+    float: left; 
+    width: 60%;
+    height: 100vh;
+}
+.right {
+    float: right; 
+    width: 40%;
+    height: 100vh;
+}
+
+
+/* svg */
+
+#svgContainer {
+    height: 100%;
+}
+
+#svgPhoto {
+    height: 100%;
+    vertical-align: middle;
+}
+
+.drawPath {
+    stroke: none;
+    stroke-width: 4.0;
+    stroke-opacity: 1;
+    stroke-linejoin: round;
+    fill-rule: evenodd;
+    fill-opacity: 1;
+    fill: transparent;
+}
+
+.drawPath1 {
+    stroke: #010101;
+}
+
+.drawPath2 {
+    stroke: #686868;
+}
+
+.drawPath3 {
+    stroke: #393939;
+}
+
+.drawPath4 {
+    stroke: #191919;
+}
+
+.drawPath5 {
+    stroke: #282828;
+}
+
+.drawPath6 {
+    stroke: #494949;
+}
+
+.drawPath7 {
+    stroke: #7b7b7b;
+}
+
+.drawPath8 {
+    stroke: #9a9a9a;
+}
+
+.drawPath9 {
+    stroke: #575757;
+}
+
+.drawPath10 {
+    stroke: #878787;
+}
+
+.drawPath11 {
+    stroke: #a8a8a8;
+}
+
+.drawPath12 {
+    stroke: #bababa;
+}
+
+.drawPath13 {
+    stroke: #cdcdcd;
+}
+
+.drawPath14 {
+    stroke: #e8e8e8;
+}
+
+.drawPath15 {
+    stroke: #dadada;
+}
+
+.drawPath16 {
+    stroke: #ffffff;
+}
+
+
+
+/* keyframes */
+
+@-webkit-keyframes fadeIn {
+  100% { 
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  100% { 
+    opacity: 1;
+  }
+}

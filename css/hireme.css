@@ -1,0 +1,244 @@
+/* general */
+body {
+    background-color: antiquewhite;
+    padding: 0px;
+    margin: 0px;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* header section */
+nav {
+    height: 100px;
+    width: 100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#name {
+    font-family: 'Bangers', cursive;
+    font-size: 4rem;
+    font-weight: 700;
+    color: black;
+    margin-left: 15px;
+    margin-top: 20px;
+    height: 100px;
+}
+
+#nameText {
+    position: relative;
+    top: 15px;
+}
+
+.socialImg {
+    height: 50px;
+}
+
+.socialImg:hover {
+    -webkit-animation: animateOpacity 0.3s forwards;
+    -moz-animation: animateOpacity 0.3s forwards;
+    animation: animateOpacity 0.3s forwards;
+    text-decoration: none;
+}
+
+#social {
+    float: right;
+    display: inline-block;
+    padding-right: 20px;
+    margin-top: 20px;
+}
+
+.spacing {
+    width: 25px;
+    display: inline-block;
+}
+
+.intro {
+    width: 70%;
+    line-height: 2rem;
+    font-family: 'Cardo', fantasy;
+    font-size: 1.25rem;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.bird {
+    display: block;
+    background: url('../img/hire-me/bird.png');
+    height: 80px;
+    width: 80px;
+    position: relative;
+    -webkit-animation: spriteAnimation 0.8s steps(20) infinite, flyright 8s ease-in-out infinite;
+    -moz-animation: spriteAnimation 0.8s steps(20) infinite, flyright 8s ease-in-out infinite;
+    animation: spriteAnimation 0.8s steps(20) infinite, flyright 8s ease-in-out infinite;  
+}
+
+@-webkit-keyframes underlineLink {
+    100% {
+        text-decoration: underline;
+        text-decoration-color: red;
+    }
+}
+
+@keyframes underlineLink {
+    100% {
+        text-decoration: underline;
+        text-decoration-color: red;
+    }
+}
+
+@-webkit-keyframes blurIn {
+    100% {
+        text-shadow: 0px 0px 0px black;
+    }
+}
+
+@keyframes blurIn {
+    100% {
+        text-shadow: 0px 0px 0px black;
+    }
+}
+
+@-webkit-keyframes animateOpacity {
+    100% { opacity: 0.6; }
+}
+@-moz-keyframes animateOpacity {
+    100% { opacity: 0.6; }
+}
+@keyframes animateOpacity {
+    100% { opacity: 0.6; }
+}
+
+
+
+/* spriteAnimation */
+@-webkit-keyframes spriteAnimation {
+    from {
+        background-position: 0px;  
+    }
+    to {
+        background-position: -1600px;
+    }
+}
+
+@-moz-keyframes spriteAnimation {
+    from {
+        background-position: 0px;  
+    }
+    to {
+        background-position: -1600px;
+    }
+}
+
+@keyframes spriteAnimation {
+    from {
+        background-position: 0px;  
+    }
+    to {
+        background-position: -1600px;
+    }
+}
+
+
+/* flyright */
+@-webkit-keyframes flyright {
+    0% {
+        left: -10%; 
+        margin-top: 5%;
+    }
+    20% {
+        margin-top: 8%;
+    }
+    40% {
+        margin-top: 12%;
+    }
+    75% {
+        margin-top: 8%;
+    }    
+    100% {
+        left: 110%;
+        margin-top: 10%;
+    }
+}
+
+@-moz-keyframes flyright {
+    0% {
+        left: -10%; 
+        margin-top: 5%;
+    }
+    20% {
+        margin-top: 8%;
+    }
+    40% {
+        margin-top: 12%;
+    }
+    75% {
+        margin-top: 8%;
+    }    
+    100% {
+        left: 110%;
+        margin-top: 10%;
+    }
+}
+
+@keyframes flyright {
+    0% {
+        left: -10%; 
+        margin-top: 5%;
+    }
+    20% {
+        margin-top: 8%;
+    }
+    40% {
+        margin-top: 12%;
+    }
+    75% {
+        margin-top: 8%;
+    }    
+    100% {
+        left: 110%;
+        margin-top: 10%;
+    }
+}
+
+@media (max-width: 650px) {
+    .spacing {
+        width: 20px;
+        height: auto;
+    }
+
+    #social {
+        margin-top: 33px;
+    }
+
+    .socialImg {
+        height: 40px;
+    }
+
+    #social .spacing {
+        width: 10px;
+    }
+
+    .intro {
+        width: 70%;
+        line-height: 1.25rem;
+        font-size: 1rem;
+        margin-top: 20px;
+    }
+
+    #nameText {
+        font-size: 2.5rem;
+    }
+
+    table { 
+        width: 100%; 
+        border-collapse: collapse; 
+    }
+}
