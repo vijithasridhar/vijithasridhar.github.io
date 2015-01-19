@@ -232,7 +232,7 @@ nav {
 }
 
 
-@media (max-width: 650px) {
+@media screen and (min-width: 510px) and (max-width: 920px) {
     .spacing {
         width: 20px;
         height: auto;
@@ -252,6 +252,61 @@ nav {
 
     #nameText {
         font-size: 2.5rem;
+    }
+
+    .projectTitle {
+        font-size: 1rem;
+    }
+
+    #projectList {
+        width: 80%;
+    }
+
+    .introText {
+        font-size: 3rem;
+        padding-bottom: 60px;
+    }
+
+    #clickme {
+        display: none;
+    }
+
+    .necessary .projectText {
+        font-size: 1rem;
+    }
+
+    .projectImgCont {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 510px) {
+    .spacing {
+        width: 20px;
+        height: auto;
+    }
+
+    nav {
+        height: 75px;
+    }
+
+    #social {
+        margin-top: 23px;
+        padding-right: 5px;
+    }
+
+    .socialImg {
+        height: 30px;
+    }
+
+    #social .spacing {
+        width: 5px;
+    }
+
+    #nameText {
+        font-size: 2rem;
+        top: -13px;
     }
 
     .projectTitle {

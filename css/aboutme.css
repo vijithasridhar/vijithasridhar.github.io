@@ -182,7 +182,7 @@ p {
     }
 }
 
-@media (max-width: 650px) {
+@media screen and (min-width: 480px) and (max-width: 760px) {
     .spacing {
         width: 20px;
         height: auto;
@@ -190,6 +190,7 @@ p {
 
     #social {
         margin-top: 33px;
+        padding-right: 5px;
     }
 
     .socialImg {
@@ -202,6 +203,55 @@ p {
 
     #nameText {
         font-size: 3rem;
+    }
+
+    .blocks, .tile { 
+        display: block;
+    }
+
+    .photoTile {
+        height: 100%;
+    }
+
+    .span2 .tileContent {
+        font-size: 1.5rem;
+    }
+
+    .tile {
+        width: 100%;
+        padding: 7px;
+    }
+
+    .tileContent {
+        padding-top: 10px;
+    }
+
+    #infoContainer {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .spacing {
+        width: 20px;
+        height: auto;
+    }
+
+    #social {
+        margin-top: 33px;
+    }
+
+    .socialImg {
+        height: 30px;
+    }
+
+    #social .spacing {
+        width: 5px;
+    }
+
+    #nameText {
+        font-size: 2.5rem;
+        top: 0px;
     }
 
     .blocks, .tile { 

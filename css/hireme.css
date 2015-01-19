@@ -208,7 +208,7 @@ nav {
     }
 }
 
-@media (max-width: 650px) {
+@media screen and (min-width: 520px) and (max-width: 860px) {
     .spacing {
         width: 20px;
         height: auto;
@@ -228,17 +228,48 @@ nav {
 
     .intro {
         width: 70%;
+        line-height: 1.75rem;
+        font-size: 1.25rem;
+        margin-top: 20px;
+    }
+
+    #nameText {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .spacing {
+        width: 20px;
+        height: auto;
+    }
+
+    nav {
+        height: 75px;
+    }
+
+    #social {
+        margin-top: 25px;
+        padding-right: 5px;
+    }
+
+    .socialImg {
+        height: 30px;
+    }
+
+    #social .spacing {
+        width: 5px;
+    }
+
+    .intro {
+        width: 70%;
         line-height: 1.25rem;
         font-size: 1rem;
         margin-top: 20px;
     }
 
     #nameText {
-        font-size: 2.5rem;
-    }
-
-    table { 
-        width: 100%; 
-        border-collapse: collapse; 
+        font-size: 2rem;
+        top: -5px;
     }
 }
