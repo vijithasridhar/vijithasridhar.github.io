@@ -88,7 +88,7 @@ nav {
 
 .tile {
     display: table-cell;
-    height: 100px;
+    height: 100px !important;
     border: 10px solid antiquewhite;
     width: 33%;
     -webkit-transition: background 0.5s ease-in-out;
@@ -105,7 +105,8 @@ nav {
     font-family: 'Garamond', serif;
     font-size: 1.5rem;
     color: black;
-    margin-left: 10px;
+    margin-left: 15px;
+    margin-top: 15px;
 }
 .tileContent {
     font-family: 'Lato', sans-serif;
@@ -113,7 +114,22 @@ nav {
     text-transform: uppercase;
     color: black;
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.tileContent23 {
+    width: 603px;
+}
+
+.item23 {
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+
+.smallFont {
+    font-size: 1.67rem;
 }
 
 .tileImg {
