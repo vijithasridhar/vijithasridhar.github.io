@@ -10,47 +10,43 @@
 
     <title>Vijitha Sridhar</title>
 
-    <!-- link href="css/bootstrap.min.css" rel="stylesheet" -->
     <link rel="shortcut icon" href="favicon.ico">
-    <link href="css/typography.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two|Rock+Salt' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two|Rock+Salt|Lato:400|Rancho|Cardo' rel='stylesheet' type='text/css'>
 
     <link href="css/index.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
 
-        <span id="social">
-            <a href="https://github.com/vijithasridhar"> <img class="socialImg" src="img/github-black.png" alt="Github" title="GitHub"> </a>
-            <div class="spacing"> </div>
-            <a href="https://www.linkedin.com/in/vijithasridhar"> <img class="socialImg" src="img/linkedin-black.png" alt="LinkedIn" title="LinkedIn"> </a>
-            <div class="spacing"> </div>           
-            <a href="mailto:vijitha.sridhar@gmail.com"> <img class="socialImg" src="img/mail-black.png" alt="Email" title="Email"> </a>
-        </span>
-
+        <!--HOMEPAGE-->
         <div id="backgroundImg">
             <div id="alphaImg">
                 <span id="iconContainer">
                     <div id="aboutme" class="linksDiv">
-                        <a href="aboutme.html"><img src="img/index/profile-black.png" class="icons" alt="About Me"></a>
+                        <img src="img/index/profile-black.png" class="icons" alt="About Me">
                         <div class="descriptors"> About Me </div>
                     </div>
                     <span class="spacing"> </span>
                     <div id="projects" class="linksDiv">
-                        <a href="projects.html"><img src="img/index/computer-black.png" class="icons" alt="Projects"></a>
+                        <img src="img/index/computer-black.png" class="icons" alt="Projects">
                         <div class="descriptors"> Projects </div>
                     </div>
                     <span class="spacing"> </span>
                     <div id="resume" class="linksDiv">
-                        <a href="hireme.html"><img src="img/index/letter-black.png" class="icons" alt="Resume"></a>
+                        <img src="img/index/letter-black.png" class="icons" alt="Contact">
                         <div class="descriptors"> Contact </div>
                     </div>
                 </span>
             </div>
         </div>
 
-        <div id="name">
-            <svg viewBox="0 0 650 180" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+        <!--NAV STUFF-->
+        <div id="nav">
+            <div id="goback"> 
+                <span id="gobacktext"> &lt; </span>
+            </div>
+
+            <svg viewBox="15 0 665 180" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
             <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
                 <defs>
                     <filter id="svg_1_blur">
@@ -63,11 +59,172 @@
                     <!--<text class="nameText" xml:space="preserve" y="110.79437" x="336.47783">vijitha sridhar</text>-->
                 </g>
             </svg>           
+        
+            <div id="social">
+                <a href="https://github.com/vijithasridhar" target="_blank">
+                    <img class="socialImg" src="img/github-black.png" alt="Github" title="GitHub"> 
+                </a>
+                <a href="https://www.linkedin.com/in/vijithasridhar" target="_blank"> 
+                    <img class="socialImg" src="img/linkedin-black.png" alt="LinkedIn" title="LinkedIn"> 
+                </a>
+                <a href="mailto:vijitha.sridhar@gmail.com" target="_blank"> 
+                    <img class="socialImg" src="img/mail-black.png" alt="Email" title="Email"> 
+                </a>
+            </div>
         </div>
+
+        
+        
+        <!--ABOUT ME-->
+        <table id="infoContainer">
+            <tr class="blocks">
+                <td class="tile" id="birthday">
+                    <div class="tileType"> I was born on </div>
+                    <div class="tileContent"> March 17, 1995 </div>
+                </td>
+
+                <td class="tile" id="grew-up">
+                    <div class="tileType"> I grew up in </div>
+                    <div class="tileContent"> San Jose, CA </div>
+                </td>
+
+                <td class="tile" id="berkeley">
+                    <div class="tileType"> I attend </div>
+                    <div class="tileContent"> UC Berkeley </div>
+                </td>            
+            </tr>
+
+            <tr class="blocks">
+                <td class="tile" id="berkeley">
+                    <div class="tileType"> I was born in </div>
+                    <div class="tileContent"> Columbia, SC </div>
+                </td>
+
+                <td class="tile" id="berkeley">
+                    <div class="tileType"> I usually sleep at </div>
+                    <div class="tileContent"> 2 AM </div>
+                </td>
+
+                <td class="tile" id="berkeley">
+                    <div class="tileType"> I'm most grateful for </div>
+                    <div class="tileContent"> my family </div>
+                </td>            
+            </tr>
+
+            <tr class="blocks">
+                <td rowspan="3" class="tile photoTile">
+                    <div id="photoDiv">
+                        <img id="photo" src="img/about-me/grayscale-full.jpg" alt="">
+                    </div>
+                </td>
+
+                <td colspan="2" class="tile span2" id="languages">
+                    <div class="tileType"> I love </div>
+                    <div class="tileContent tileContent23"> 
+                        <div class="item23 smallFont"> Fuzzy Socks </div>
+                        <div class="item23 smallFont"> The Office </div>
+                        <div class="item23 smallFont"> Vanilla Cake </div>
+                    </div>
+                </td>
+            </tr>
+         
+            <tr class="blocks">
+                <td class="tile" id="languages">
+                    <div class="tileType"> My favorite food is </div>
+                    <div class="tileContent"> Guacamole </div>
+                </td>
+                <td class="tile" id="languages">
+                    <div class="tileType"> My favorite sport is </div>
+                    <div class="tileContent"> Swimming </div>
+                </td>
+            </tr>
+
+            <tr class="blocks">
+                <td colspan="2" class="tile span2" id="languages">
+                    <div class="tileType"> I speak </div>
+                    <div class="tileContent tileContent23"> 
+                        <div class="item23"> English </div>
+                        <div class="item23"> Tamil </div>
+                        <div class="item23"> Spanish </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+
+        <!--PROJECTS -->
+        <div id="projectList">
+            <div class="projectElement">
+                <h3 class="projectTitle"> Topic Analyses </h3>
+                <div class="projectText">
+                    <img src="img/projects/topic-analyses.jpg" class="projectImg">
+                    <p>
+                   This studies trending topics in New York Times articles using different algorithmic 
+                   techniques in the R programming language. 
+                    </p>
+                </div>
+            </div>
+            <div class="projectElement">
+                <h3 class="projectTitle"> Fruitful </h3>
+                <div class="projectText">
+                    <img src="img/projects/fruitful.jpg" class="projectImg">
+                    <p>
+                    Fruitful is a web app that teaches simple self-exams for breast, testicular, and skin 
+                    cancers through colorful fruit animations. This won 1st place in the 2015 Women 
+                    in STEM hackathon.
+                    </p>
+                </div>
+            </div>
+            <div class="projectElement">
+                <h3 class="projectTitle"> Breadth-Major Overlaps </h3>
+                <div class="projectText">
+                    <img src="img/projects/breadth-major-overlaps.jpg" class="projectImg">
+                    <p>
+                    This uses BeautifulSoup (Python) to parse through UC Berkeley webpages to see which classes 
+                    required for majors/minors can also be used to fulfill breadth requirements.
+                    </p>
+                </div>
+            </div>
+            <div class="projectElement">
+                <h3 class="projectTitle"> Network </h3>
+                <div class="projectText">
+                    <img src="img/projects/network-61b.jpg" class="projectImg">
+                    <p>
+                    I designed an AI program in Java to play the game Network using the minimax algorithm and 
+                    alpha-beta pruning.
+                    </p>
+                </div>     
+            </div>
+            <div class="projectElement">
+                <h3 class="projectTitle"> Depth Perception Simulator </h3>
+                <div class="projectText">
+                    <img src="img/projects/depthmap-61c.jpg" class="projectImg">
+                    <p>
+                    This project, written in C, can distinguish between far away and close by objects by creating 
+                    a depth map with respect to each pixel, and then normalizing that map. 
+                    </p>
+                </div>
+            </div>
+        </div> 
+
+        
+        <!--CONTACT-->
+        <div id="contact">
+            <p class="intro"> I'm interested in learning more about computer science, so I would love any opportunity
+            that would teach me! Right now I'm looking for a summer internship at a company that would allow me to 
+            learn a lot. To download a copy of my resume, click
+            <a href="https://www.dropbox.com/s/kvx7qm5gzuju2js/Vijitha%20Sridhar%27s%20Resume.pdf?dl=0" target="_blank">here</a>. 
+            Looking forward to hearing from you soon!
+
+            <div class="bird"></div>
+        </div>
+
+
 
     </div>
 
 </body>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
-    <script src="js/index.js" type="text/javascript"></script>
+    <script src="js/typed.js" type="text/javascript"> </script>
+    <script src="js/index.js" type="text/javascript"> </script>
 </html>

@@ -1,3 +1,5 @@
+/* GENERAL */
+
 html {
     width: 100%;
     height: 100%;
@@ -10,24 +12,72 @@ body {
     padding: 0;
 }
 
-a {
-    text-decoration: none;
+.container { 
+    position: relative; 
+    width: 100%;
+    height: 100vh;
 }
 
 
-/* navbar */
-nav {
-    /* padding: 0px 10px 20px 10px; */
-    height: 100px;
-    width: 100%;
-    z-index: 100;
-    background-color: rgba(0, 0, 0, 0.2);
+
+/* NAVBAR SECTION: name, back, links */
+
+#nav {
+    position: relative;
+    height: calc(30%);
+    z-index: 1;
+}
+
+
+#goback {
+    display: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+    font-size: 1.5em;
+    text-shadow: 1px 1px #505050;
+    position: absolute;
+    top: 35%;
+    left: 30px;
+    cursor: pointer;
+}
+
+.typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+svg {
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+
+}
+
+.drawPath {
+    stroke: black;
+    stroke-width: 3.0;
+    stroke-opacity: 1;
+    stroke-linejoin: round;
+    fill-rule: nonzero;
+    fill-opacity: 1;
+    fill: transparent;
+}
+
+.nameText {
+    text-anchor: middle; 
+    font-weight: bold;
+    font-family: 'Rock Salt', cursive;
+    text-transform: capitalize;
+    font-size: 4em;
+    stroke-width: 1.75;
+    stroke: black;
+    fill: transparent;
 }
 
 .socialImg {
-    height: 50px;
-    position: absolute;
-    top: 25%;
+    height: 100%;
 }
 
 .socialImg:hover {
@@ -38,21 +88,21 @@ nav {
 }
 
 #social {
-    float: right;
     display: none;
-    /* padding-right: 20px; */
-    height: 100px;
-    width: 210px;
-    position: relative;
+    height: 50px;
+    width: 180px;
+    position: absolute;
+    top: 35%;
+    right: 0;
 }
 
-.spacing {
-    width: 25px;
-    display: inline-block;
+#social a {
+    text-decoration: none;
 }
 
 
-/* span of images */
+
+/* HOMEPAGE */
 #backgroundImg {
     background-image: url('../img/index/background-index.jpg');
     background-repeat: no-repeat;
@@ -92,6 +142,11 @@ nav {
     display: inline-block;
 }
 
+.linksDiv a {
+    text-decoration: none;
+}
+
+
 .spacing {
     display: inline-block;
     width: 70px;
@@ -101,6 +156,7 @@ nav {
 .icons {
     height: 100px;
     width: auto;
+    cursor: pointer;
 }
 
 .icons:hover {
@@ -126,62 +182,172 @@ nav {
     opacity: 1;
 }
 
-a { 
-    color: white; 
-    text-decoration: none;
-    height: 100px;
-    /* top: 20%; */
-}
-a:hover {
-    text-decoration: underline;
-}
 
-/* svg */
-
-svg {
-    height: 100%;
+/* ABOUT ME PAGE */
+#infoContainer { 
+    display: table;
+    table-layout: fixed;
+    width: 960px;
     margin: 0 auto;
+    margin-top: 20px;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    background: url('../img/about-me/background.jpg') no-repeat left top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.blocks {
+    display: table-row;
+}
+
+.tile {
+    display: table-cell;
+    border: 10px solid antiquewhite;
+    width: 33%;
+    -webkit-transition: background 0.5s ease-in-out;
+    -moz-transition: background 0.5s ease-in-out;
+    transition: background 0.5s ease-in-out;
+    /* border: 3px black; */
+}
+
+.tile:hover {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.tileType {
+    font-family: 'Garamond', serif;
+    font-size: 1.5rem;
+    color: black;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.tileContent {
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: black;
+    display: inline-block;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.tileContent23 {
+    width: 603px;
+}
+
+.item23 {
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+
+.smallFont {
+    font-size: 1.67rem;
+}
+
+.tileImg {
+    width: 50px;
+    display: inline-block;
+}
+
+#photoDiv {
+    overflow: hidden;
+    height: 320px;
+    /* margin: 0 auto; */
+}
+
+#photo {
+    width: 280px;
+    margin: 0 auto;
+    margin-top: -20px;
+    display: table;
+}
+
+#about-box {
+    margin: 0px;
+}
+
+#about-text {
+    color: black;
+    font-family: 'Cookie', cursive;
+    text-align: center;
+    font-size: 6rem;
+    -webkit-animation: glowText 2s ease-in-out 0.25s forwards;
+    animation: glowText 2s ease-in-out 0.25s forwards;
+}
+
+
+/* PROJECTS */
+#projectList {
+    margin: 0 auto;
+    width: 60%;
+    margin-top: 50px;
+}
+
+.projectElement {
+    background-color: pink;
+    box-shadow: 0px 0px 60px 10px pink inset;
+    font-family: 'Cardo', sans-serif;
+    padding: 5px 15px;
+    border-radius: 50px;
+    border-style: ridge;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.3);
+}
+
+.projectTitle {
+    margin: 0;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.projectText {
+    font-size: 1.25rem;
     display: block;
-
+    margin: 1rem auto;
 }
 
-.drawPath {
-    stroke: black;
-    stroke-width: 3.0;
-    stroke-opacity: 1;
-    stroke-linejoin: round;
-    fill-rule: nonzero;
-    fill-opacity: 1;
-    fill: transparent;
+.projectText p {
+    padding: 1rem 1rem 0 1rem;
 }
 
-#name {
-    position: relative;
-    height: calc(30%);
-    z-index: 1;
-}
-
-.nameText {
-    text-anchor: middle; 
-    font-weight: bold;
-    font-family: 'Rock Salt', cursive;
-    text-transform: capitalize;
-    font-size: 4em;
-    stroke-width: 1.75;
-    stroke: black;
-    fill: transparent;
+.projectImg {
+    width: 200px;
+    height: auto;
+    margin: 1rem auto;
+    display: block;
 }
 
 
-/* general */
-.container { 
-    position: relative; 
-    width: 100%;
-    height: 100vh;
+/* CONTACT */
+.intro {
+    width: 70%;
+    line-height: 2rem;
+    font-family: 'Cardo', fantasy;
+    font-size: 1.25rem;
+    margin: 0 auto;
+    margin-top: 50px;
 }
+
+.bird {
+    display: block;
+    background: url('../img/contact/bird.png');
+    height: 80px;
+    width: 80px;
+    position: fixed;
+    -webkit-animation: spriteAnimation 0.8s steps(20) infinite, flyright 8s ease-in-out infinite;
+    -moz-animation: spriteAnimation 0.8s steps(20) infinite, flyright 8s ease-in-out infinite;
+    animation: spriteAnimation 0.8s steps(20) infinite, flyright 8s ease-in-out infinite;  
+}
+
 
 
 /* keyframes */
+/* for social links */
 @-webkit-keyframes animateOpacity {
     100% { opacity: 0.6; }
 }
@@ -192,6 +358,24 @@ svg {
     100% { opacity: 0.6; }
 }
 
+/* for typed.js cursor */
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+/* for homepage imgs */
 @-webkit-keyframes rotate {
     0% { -webkit-transform: rotate(0deg); }
     25% { -webkit-transform: rotate(-5deg); }
@@ -214,123 +398,235 @@ svg {
     100% { transform: rotate(0deg); }
 }
 
-@media screen and (min-width: 480px) and (max-width: 760px) {
-    #name {
+
+/* contact bird */
+@-webkit-keyframes spriteAnimation {
+    from { background-position: 0px; }
+    to { background-position: -1600px; }
+}
+
+@-moz-keyframes spriteAnimation {
+    from { background-position: 0px; }
+    to { background-position: -1600px; }
+}
+
+@keyframes spriteAnimation {
+    from { background-position: 0px; }
+    to { background-position: -1600px; }
+}
+
+
+/*[> contact bird <]*/
+@-webkit-keyframes flyright {
+    0% {
+        left: -1%; 
+        margin-top: 5%;
+    }
+    20% { margin-top: 8%; }
+    40% { margin-top: 12%; }
+    75% { margin-top: 8%; }    
+    100% {
+        left: 50%;
+        margin-top: 10%;
+    }
+}
+
+@-moz-keyframes flyright {
+    0% {
+        left: -10%; 
+        margin-top: 5%;
+    }
+    20% { margin-top: 8%; }
+    40% { margin-top: 12%; }
+    75% { margin-top: 8%; } 
+    100% {
+        left: 110%;
+        margin-top: 10%;
+    }
+}
+
+@keyframes flyright {
+    0% {
+        left: -10%; 
+        margin-top: 5%;
+    }
+    20% { margin-top: 8%; }
+    40% { margin-top: 12%; }
+    75% { margin-top: 8%; } 
+    100% {
+        left: 110%;
+        margin-top: 10%;
+    }
+}
+
+
+@media screen and (min-width: 501px) and (max-width: 1080px) {
+    #nav {
         width: 100%;
     }
-
     svg {
         width: 80%;
     }
-
-    #backgroundImg {
-        width: 350px;
-        height: 350px;
+    .nameText {
+        font-size: 3rem;
     }
 
-    .icons {
-        width: 50px;
-        height: auto;
-    }
 
     .spacing {
         width: 20px;
         height: auto;
     }
+    #social {
+        width: 135px;
+        height: 40px;
+    }
+    .socialImg {
+        height: 100%;
+        position: relative;
+    }
 
+    /* homepage */
+    #backgroundImg {
+        width: 350px;
+        height: 350px;
+    }
+    .icons {
+        width: 50px;
+        height: auto;
+    }
     .descriptors {
         opacity: 1;
     }
-
     #iconContainer {
         top: 33%;
         width: 230px;
         left: 19%;
     }
 
-    #social {
-        margin-top: 10px;
-        width: 160px;
+    /* about me */
+    .blocks, .tile { 
+        display: block;
+    }
+    .photoTile {
+        height: 100%;
+    }
+    .span2 .tileContent {
+        font-size: 1.5rem;
+    }
+    .tile {
+        width: 95%;
+        padding: 7px;
+    }
+    .tileContent {
+        padding-top: 10px;
+    }
+    #infoContainer {
+        width: 90%;
     }
 
-    .socialImg {
-        height: 40px;
-        position: relative;
+    /* contact */
+    .intro {
+        width: 70%;
+        line-height: 1.75rem;
+        font-size: 1.25rem;
+        margin-top: 20px;
     }
 
-    #social .spacing {
-        width: 10px;
-    }
 }
 
-@media screen and (max-width: 480px) {
-    #name {
+@media screen and (max-width: 500px) {
+    #nav {
         width: 100%;
     }
-
     svg {
         width: 100%;
         height: 75px;
     }
-
-    nav {
-        height: 75px;
-    }
-
-    #backgroundImg {
-        width: 250px;
-        height: 250px;
-    }
-
-    .icons {
-        width: 50px;
-        height: auto;
+    #nameText {
+        font-size: 2rem;
     }
 
     .spacing {
         width: 20px;
         height: auto;
     }
+    #social {
+        width: 160px;
+        height: 40px;
+        position: relative;
+        top: 0;
+        margin: 10px auto 0 auto;
+    }
+    #social a {
+        margin-left: 5px;
+    }
+    #goback {
+        position: relative;
+        top: 0;
+        left: 0;
+        padding: 10px 0px 5px 10px;
+        font-size: 1em;
+    }
 
+    /* homepage */
+    #backgroundImg {
+        width: 250px;
+        height: 250px;
+    }
+    .icons {
+        width: 50px;
+        height: auto;
+    }
     .descriptors {
         opacity: 1;
     }
-
     #iconContainer {
         top: 28%;
     }
 
-    #social {
+    /* about me */
+    .blocks, .tile { 
+        display: block;
+    }
+    .photoTile {
+        height: 345px;
+    }
+    .span2 {
+        display: none;
+    }
+    .tile {
+        width: 100%;
+        padding: 7px;
+        border: 0;
+    }
+    .tileContent {
+        padding-top: 10px;
+        font-size: 1.75em;
+    }
+    #infoContainer {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    /* projects */
+    #projectList {
+        width: 90%;
         margin-top: 10px;
-        width: 120px;
+    }
+    .projectTitle {
+        font-size: 1.25em;
+    }
+    .projectText {
+        font-size: 1em;
     }
 
-    .socialImg {
-        height: 30px;
-        position: relative;
-        top: 16px;
+
+    /* contact */
+    .intro {
+        width: 70%;
+        line-height: 1.25rem;
+        font-size: 1rem;
+        margin-top: 20px;
     }
 
-    #social .spacing {
-        width: 5px;
-    }
 }
-/*
-@-webkit-keyframes fadeIn {
-  100% { 
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes fadeIn {
-  100% { 
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  100% { 
-    opacity: 1;
-  }
-}*/
-
