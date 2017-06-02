@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href='http://fonts.googleapis.com/css?family=Lato:400' rel='stylesheet' type='text/css'>        
         <style> 
             input[type=text] {
-                width: 130px;
+                width: 400px;
+                margin-top: 30px;
                 box-sizing: border-box;
                 border: 2px solid #ccc;
                 border-radius: 4px;
                 font-size: 16px;
                 background-color: white;
-                background-image: url('https://www.w3schools.com/howto/searchicon.png');
                 background-position: 10px 10px; 
                 background-repeat: no-repeat;
                 padding: 12px 20px 12px 40px;
@@ -17,16 +18,17 @@
                 transition: width 0.4s ease-in-out;
             }
 
-            input[type=text]:focus {
-                width: 100%;
-            }
-
             .heading {
                 font-family: 'Lato', sans-serif;
                 font-size: 2rem;
                 text-transform: uppercase;
                 color: black;
+                text-align: center;        
+                margin-top: 100px;
+            }
 
+            #submit {
+                background-image: url('https://www.w3schools.com/howto/searchicon.png');
             }
         </style>
     </head>
@@ -35,7 +37,8 @@
         <p class="heading">Search for a diagnosis</p>
 
         <form>
-            <input type="text" name="search" placeholder="Search...">
+            <input type="text" id="searchbox" name="search" placeholder="Search...">
+            <button type="submit" id="submit> </button>
         </form>
 
     </body>
