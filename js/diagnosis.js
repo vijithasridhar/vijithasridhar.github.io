@@ -1,5 +1,7 @@
 $('document').ready(function(){
 
+    var table;
+
     // implemented with Knuth-Morris-Pratt algorithm
     function preprocess(input) {
         var table = [].fill.call({ length: input.length }, 1);
@@ -15,11 +17,11 @@ $('document').ready(function(){
         return table;
     };
 
-    function single_match(input, haystack) {
-        var table = preprocess(input);
+    function single_match(single_str) {
+        var input = $('#searchbox').val();
         var i = 0, match = 0;
-        while (i + match < haystack.length) {
-            if (input[match] == haystack[i + match]) {
+        while (i + match < single_str.length) {
+            if (input[match] == single_str[i + match]) {
                 match += 1;
                 if (match == input.length) {
                     return true;
@@ -35,10 +37,25 @@ $('document').ready(function(){
         return false;
     };
 
-    $("#submit").click(function() {
-        var input = $('#searchbox').val();
-        matches = match(input);
+    function match(input, diagnoses) {
+        var table = preprocess(input);
+        var results = [];
+        diagnoses.foreach(function(diagnosis_name) {
+            if (single_match(diagnosis_name)) {
+                results.push(diagnosis_name);
+            }
+        });
+        return results;
+    };
 
+    $("#submit").click(function() {
+        var diagnoses = jQuery.get('short_diagnoses.txt');
+        diagnoses = diagnoses.split("\n");
+        var input = $('#searchbox').val();        
+        var matches = match(input, diagnoses);
+        matches.foreach(function(match) {
+            $('#results').append('<li class="result">' + match + '</li>');
+        });
     });
 
 
