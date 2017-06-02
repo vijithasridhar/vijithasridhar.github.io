@@ -25,7 +25,15 @@
             }
 
             #submit {
-                background-image: url('http://www.w3schools.com/howto/searchicon.png');
+                background: url('http://www.w3schools.com/howto/searchicon.png') no-repeat center center;
+                width: 25px;
+                height:25px;
+                border: 1px solid #ccc;
+            }
+
+            #searchform {
+                width: 500px;
+                margin: 0 auto;
             }
         </style>
     </head>
@@ -33,9 +41,9 @@
 
         <p class="heading">Search for a diagnosis</p>
 
-        <form>
+        <form id="searchform">
             <input type="text" id="searchbox" name="search" placeholder="Search...">
-            <input type="image" id="submit" src="http://www.w3schools.com/howto/searchicon.png" />
+            <button type="submit" id="submit"> </button>
         </form>
 
     </body>
