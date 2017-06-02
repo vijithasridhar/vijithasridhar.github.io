@@ -49,7 +49,7 @@ $('document').ready(function(){
     };
 
     $("#submit").click(function() {
-        var diagnoses = jQuery.get('short_diagnoses.txt');
+        var diagnoses = jQuery.get('../short_diagnoses.txt');
         diagnoses = diagnoses.split("\n");
         var input = $('#searchbox').val();        
         var matches = match(input, diagnoses);
